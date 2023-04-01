@@ -1,7 +1,7 @@
-const handling = () => {
-    return true
+const handling = (req, res, next) => {
+    next()
 }
 
-module.export = {
+module.exports = {
     handling
 }

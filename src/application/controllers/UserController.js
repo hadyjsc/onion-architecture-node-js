@@ -1,4 +1,4 @@
-const User = require('../../../application/usecase/user');
+const User = require('../usecase/user');
 
 class UserController {
     userUsecase

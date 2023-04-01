@@ -1,3 +1,4 @@
+require('dotenv').config();
 const app = require('./server');
 const { connect } = require('../../infrastructure/database');
 
@@ -5,15 +6,13 @@ const { connect } = require('../../infrastructure/database');
 const startServer = async () => {
     try {
         await connect();
-        console.log('Connected to database');
-        app.listen(process.env.PORT, () => {
-            console.log(`Server is running on port ${process.env.PORT}`);
+        app.listen(process.env.APP_PORT, () => {
+            console.log(`Server is running on port ${process.env.APP_PORT}`);
         });
     } catch (error) {
         console.error('Error starting server:', error);
+        throw error;
     }
 };
 
-module.exports = {
-    startServer
-}
+startServer()

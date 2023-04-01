@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const UserRepository = require('../../../domain/repositories/UserRepository');
 const UserService = require('../../../domain/services/UserService')
-const UserController = require('../controllers/UserController');
+const UserController = require('../../../application/controllers/UserController');
 
 const userService = new UserService(new UserRepository());
 const controller = new UserController(userService)
