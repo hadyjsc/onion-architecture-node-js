@@ -1,0 +1,33 @@
+{
+  "name": "clean-architecture",
+  "version": "1.0.0",
+  "description": "using union architecture in nodejs project",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node src/infrastructure/http/index.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hadyjsc/onion-architecture-node-js.git"
+  },
+  "keywords": [
+    "clean",
+    "architecture",
+    "onion",
+    "architecture",
+    "nodejs",
+    "microservice",
+    "sql",
+    "nosql"
+  ],
+  "author": "Hady Eka Saputra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hadyjsc/onion-architecture-node-js/issues"
+  },
+  "homepage": "https://github.com/hadyjsc/onion-architecture-node-js#readme"
+}
