@@ -6,4 +6,4 @@ const initializeMessageBroker = require('./message-broker/index');
 // const UserMapper = require('./userMapper');
 
 httpStart.startServer()
-initializeMessageBroker.initializeMessageBroker()
+// initializeMessageBroker.initializeMessageBroker()

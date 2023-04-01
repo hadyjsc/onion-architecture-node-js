@@ -1,13 +1,20 @@
-const User = require('../entities/user');
+const User = require('../../infrastructure/database/models/user');
 
 class UserRepository {
+    _database
+    
     constructor(database) {
-        this._database = database;
+        this._database = database || new User();
     }
 
     async create(user) {
         const result = await this._database.User.create(user.toJSON());
         return this._fromDatabase(result);
+    }
+
+    async selectAll() {
+        const result = await this._database.User.findAll()
+        return this._fromDatabase(result)
     }
 
     async findById(id) {

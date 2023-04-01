@@ -1,0 +1,11 @@
+{
+    "hello": "Hello!",
+    "welcome": "Welcome, {name}!",
+    "login": {
+      "title": "Log In",
+      "username": "Username",
+      "password": "Password",
+      "submit": "Log In"
+    }
+}
+  
